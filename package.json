@@ -1,0 +1,28 @@
+{
+  "name": "checkbox-radio-component",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass main.scss css/style.css -w",
+    "start": "npm-run-all watch:sass"
+  },
+  "author": "Elsa Vivien",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elsa-Ilelli/component-checkboxRadio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elsa-Ilelli/component-checkboxRadio/issues"
+  },
+  "homepage": "https://github.com/elsa-Ilelli/component-checkboxRadio#readme",
+  "description": "",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "unfocus": "^1.0.1"
+  }
+}

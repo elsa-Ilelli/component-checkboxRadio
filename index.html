@@ -1,0 +1,99 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckBox & Radio Button Component</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <button class="btn-theme" data-switch-dark><img id="btn-icon" src="src/img/moon.png"></button>
+    <div class="content">
+        <label class="checkbox">
+            <span class="checkbox__input">
+            <input type="checkbox" name="checkbox" />
+            <span class="checkbox__control">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+                >
+                <path
+                    fill="none"
+                    stroke-width="5"
+                    d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                />
+                </svg>
+            </span>
+            </span>
+            <span class="checkbox__label">Checkbox</span>
+        </label>
+        
+        <label class="checkbox">
+            <span class="checkbox__input">
+                <input type="checkbox" name="checked" checked />
+                <span class="checkbox__control">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                >
+                    <path
+                    fill="none"
+                    stroke-width="5"
+                    d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                    />
+                </svg>
+                </span>
+            </span>
+            <span class="checkbox__label">Checkbox - Checked</span>
+        </label>
+
+        <label class="checkbox">
+            <span class="checkbox__input">
+            <input type="checkbox" name="disabled" disabled />
+            <span class="checkbox__control">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+                >
+                <path
+                    fill="none"
+                    stroke-width="5"
+                    d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                />
+                </svg>
+            </span>
+            </span>
+            <span class="checkbox__label">Checkbox - Disabled</span>
+        </label>
+        
+        <label class="checkbox">
+            <span class="checkbox__input">
+                <input type="checkbox" name="disabled-checked" checked disabled/>
+                <span class="checkbox__control">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                >
+                    <path
+                    fill="none"
+                    stroke-width="5"
+                    d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                    />
+                </svg>
+                </span>
+            </span>
+            <span class="checkbox__label">Checkbox - Disabled Checked</span>
+        </label>
+    </div>
+</body>
+</html>
+<script src="accessibility.js"></script>
+<script src="script.js"></script>
