@@ -3,10 +3,13 @@
 /*//////////////////////////////*/
 /*      COMPONENT MANAGER       */
 /*//////////////////////////////*/
+
+//////////////////////////////////
+//CheckBox Manager 
+
 const checkboxInput = document.querySelectorAll('.checkboxInput');
 const labelInput = document.querySelectorAll('.checkbox'); 
 const checkboxControl = document.querySelectorAll('.checkbox__control');
-
 
 checkboxInput.forEach((input, i) => {
   if(input.hasAttribute('disabled')){
@@ -20,6 +23,9 @@ checkboxInput.forEach((input, i) => {
   }
 })
 
+//////////////////////////////////
+//Radio Button Manager
+
 const radioInput = document.querySelectorAll('.radioInput');
 const radioLabel = document.querySelectorAll('.radio'); 
 const radioControl = document.querySelectorAll('.radio__control');
@@ -30,8 +36,6 @@ radioInput.forEach((input, i) => {
     radioLabel[i].style.cursor = 'not-allowed';
   }
 })
-
-
 
 /*//////////////////////////////*/
 /*          DARK MODE           */

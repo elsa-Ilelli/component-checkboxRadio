@@ -55,6 +55,7 @@ body {
 /*//////////////////////////////*/
 /*         STYLE GLOBAL         */
 /*//////////////////////////////*/
+
 .content{
     display: flex;
     flex-direction: column;
@@ -75,6 +76,7 @@ body {
     cursor: pointer;
 }
 
+
 .checkbox__input,
 .radio__input {
     display: grid;
@@ -93,35 +95,50 @@ body {
     }
 }
 
-.checkbox__control {
-    display: inline-grid;
-    justify-content: center;
-    align-items: center;
-    width: 1.25em;
-    height: 1.25em;
-    border-radius: 0.25em;
-    border: 0.1em solid var(--primary);
 
-    svg {
-        width: 0.75em;
-        height: 0.75em;
-        transition: transform 0.1s ease-in 25ms;
-        transform: scale(0);
-        transform-origin: bottom left;
-    }
+//////////////////////////////////
+//CheckBox Style 
+
+.checkbox__control {
+  display: inline-grid;
+  place-items: center;
+  width: 1.25em;
+  height: 1.25em;
+  border-radius: 0.25em;
+  border: 0.1em solid var(--primary);
+
+  svg {
+      width: 0.75em;
+      height: 0.75em;
+      transition: transform 0.1s ease-in 25ms;
+      transform: scale(0);
+      transform-origin: bottom left;
+  }
 }
 
 .checkbox__input input:checked + .checkbox__control {
-    background-color: var(--primary);
+  background-color: var(--primary);
 }
 
 .checkbox__input input:checked + .checkbox__control svg {
-    transform: scale(1);
-    stroke: var(--compColor);
+  transform: scale(1);
+  stroke: var(--compColor);
 }
 
 .checkbox__input input:focus + .checkbox__control {
-    box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+}
+
+//////////////////////////////////
+//Radio Button Style 
+
+.radio{
+  &:focus-within { //permet de sélectionner le parent dont un enfant est focus
+    .radio__label { //sélection de l'enfant du parent qu'on souhaite styliser
+      transform: scale(1.05);
+      color:var(--primary);
+    }
+  }
 }
 
 .radio__control {
@@ -132,6 +149,10 @@ body {
     border-radius: 50%;
     border: 0.1em solid var(--primary);
     transition: all 0.2s ease-in
+}
+
+.radio__label{
+  transition: 180ms all ease-in-out;
 }
 
 input + .radio__control::before {
