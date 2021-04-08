@@ -63,7 +63,8 @@ body {
     gap: 2rem;
 }
 
-.checkbox {
+.checkbox,
+.radio {
     display: grid;
     grid-template-columns: min-content auto;
     grid-gap: 1em;
@@ -74,7 +75,8 @@ body {
     cursor: pointer;
 }
 
-.checkbox__input {
+.checkbox__input,
+.radio__input {
     display: grid;
     grid-template-areas: "checkbox";
     
@@ -120,6 +122,42 @@ body {
 
 .checkbox__input input:focus + .checkbox__control {
     box-shadow: var(--shadow);
+}
+
+.radio__control {
+    display: grid;
+    place-items: center;
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 50%;
+    border: 0.1em solid var(--primary);
+    transition: all 0.2s ease-in
+}
+
+input + .radio__control::before {
+  content: "";
+  width: 0.6em;
+  height: 0.6em;
+  background-color: var(--primary);
+  border-radius: 50%;
+  transition: transform 180ms ease-in-out;
+  transform: scale(0);
+}
+
+input:checked + .radio__control::before {
+  transform: scale(1);
+}
+
+input:disabled + .radio__control::before {
+  background-color: var(--disabled);
+}
+
+input:disabled + .radio__control {
+  border: 0.1em solid var(--disabled);
+}
+
+.radio__input input:focus + .radio__control {
+  box-shadow: var(--shadow);
 }
 
 /*//////////////////////////////*/

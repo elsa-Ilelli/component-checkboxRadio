@@ -11,41 +11,41 @@
     <div class="content">
         <label class="checkbox">
             <span class="checkbox__input">
-            <input type="checkbox" name="checkbox" />
-            <span class="checkbox__control">
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                focusable="false"
-                >
-                <path
-                    fill="none"
-                    stroke-width="5"
-                    d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                />
-                </svg>
-            </span>
+                <input type="checkbox" name="checkbox" class="checkboxInput"/>
+                <span class="checkbox__control">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                    >
+                    <path
+                        fill="none"
+                        stroke-width="5"
+                        d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                    />
+                    </svg>
+                </span>
             </span>
             <span class="checkbox__label">Checkbox</span>
         </label>
         
         <label class="checkbox">
             <span class="checkbox__input">
-                <input type="checkbox" name="checked" checked />
+                <input type="checkbox" name="checked" class="checkboxInput" checked />
                 <span class="checkbox__control">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                    focusable="false"
-                >
-                    <path
-                    fill="none"
-                    stroke-width="5"
-                    d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                    />
-                </svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                    >
+                        <path
+                        fill="none"
+                        stroke-width="5"
+                        d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                        />
+                    </svg>
                 </span>
             </span>
             <span class="checkbox__label">Checkbox - Checked</span>
@@ -53,45 +53,80 @@
 
         <label class="checkbox">
             <span class="checkbox__input">
-            <input type="checkbox" name="disabled" disabled />
-            <span class="checkbox__control">
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                focusable="false"
-                >
-                <path
-                    fill="none"
-                    stroke-width="5"
-                    d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                />
-                </svg>
-            </span>
+                <input type="checkbox" name="disabled" class="checkboxInput" disabled />
+                <span class="checkbox__control">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                    >
+                    <path
+                        fill="none"
+                        stroke-width="5"
+                        d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                    />
+                    </svg>
+                </span>
             </span>
             <span class="checkbox__label">Checkbox - Disabled</span>
         </label>
         
         <label class="checkbox">
             <span class="checkbox__input">
-                <input type="checkbox" name="disabled-checked" checked disabled/>
+                <input type="checkbox" name="disabled-checked" class="checkboxInput" checked disabled/>
                 <span class="checkbox__control">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                    focusable="false"
-                >
-                    <path
-                    fill="none"
-                    stroke-width="5"
-                    d="M1.73 12.91l6.37 6.37L22.79 4.59"
-                    />
-                </svg>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        focusable="false"
+                    >
+                        <path
+                        fill="none"
+                        stroke-width="5"
+                        d="M1.73 12.91l6.37 6.37L22.79 4.59"
+                        />
+                    </svg>
                 </span>
             </span>
             <span class="checkbox__label">Checkbox - Disabled Checked</span>
         </label>
+
+        <div>&nbsp;</div>
+
+        <label class="radio">
+            <span class="radio__input">
+                <input type="radio" name="radio" class="radioInput" />
+                <span class="radio__control"></span>
+            </span>
+            <span class="radio__label">Radio 1</span>
+        </label>
+        
+        <label class="radio">
+            <span class="radio__input">
+                <input type="radio" name="radio" class="radioInput" />
+                <span class="radio__control"></span>
+            </span>
+            <span class="radio__label">Radio 2</span>
+        </label>
+
+        <label class="radio">
+            <span class="radio__input">
+                <input type="radio" name="radio2" class="radioInput" disabled />
+                <span class="radio__control"></span>
+            </span>
+            <span class="radio__label">Radio - Disabled</span>
+        </label>
+        
+        <label class="radio">
+            <span class="radio__input">
+                <input type="radio" name="radio2" class="radioInput" checked disabled />
+                <span class="radio__control"></span>
+            </span>
+            <span class="radio__label">Radio - Disabled Checked</span>
+        </label>
+
     </div>
 </body>
 </html>
